@@ -1,14 +1,14 @@
 # 🚨 ResQ
-### AI-Assisted Disaster Relief Request Prioritization Using Natural Language Processing
+# AI-Assisted Disaster Relief Request Prioritization Using Natural Language Processing
 
-> **Helping disaster response teams identify urgent needs from emergency messages.**
+**Helping disaster response teams identify urgent needs from emergency messages.**
 
 ResQ is a proposed AI-assisted system for analysing disaster-related emergency requests, extracting key information, and organizing requests by urgency. It is designed to help response personnel review large volumes of unstructured messages more efficiently.
 
-**Project status:** 🟡 Planning / proposed design  
-**Domain:** Natural Language Processing · Machine Learning · Disaster Management  
-**Candidate models:** BERT and RoBERTa  
-**License:** Not yet specified
+- **Project status:** 🟡 Planning / proposed design
+- **Domain:** Natural Language Processing · Machine Learning · Disaster Management
+- **Candidate models:** BERT and RoBERTa
+- **License:** Not yet specified
 
 ---
 
@@ -16,9 +16,9 @@ ResQ is a proposed AI-assisted system for analysing disaster-related emergency r
 
 During disasters, affected people may submit requests through channels such as SMS, web portals, and mobile applications. When many messages arrive at once, manually reviewing each request can delay the identification of urgent situations. Messages may also contain incomplete details or be written in different languages.
 
-ResQ proposes a workflow that applies Natural Language Processing (NLP) and transformer-based language models to help process these messages. The planned system will classify requests into **High**, **Medium**, and **Low** priority levels and extract information that can help responders understand the situation.
+ResQ proposes a workflow that applies Natural Language Processing (NLP) and transformer-based language models to help process these messages. The planned system will classify requests into **High, Medium, and Low** priority levels and extract information that can help responders understand the situation.
 
-The project is currently in the **planning stage**. The architecture and capabilities described in this README are proposed; they should not be interpreted as completed or deployed features.
+> **Project stage:** The project is currently in the planning stage. The architecture and capabilities described in this README are proposed; they should not be interpreted as completed or deployed features.
 
 ## 🎯 Problem Statement
 
@@ -41,7 +41,7 @@ ResQ is planned as a modular NLP-based system that will:
 3. Clean and preprocess message text, then tokenize it for model input.
 4. Evaluate transformer-based models such as BERT and RoBERTa for urgency classification.
 5. Extract useful details from each message.
-6. Assign a priority category: High, Medium, or Low.
+6. Assign a priority category: **High, Medium, or Low**.
 7. Organize prioritized requests for review through a proposed responder interface.
 
 The system is intended to **support—not replace—human judgement** in disaster response.
@@ -49,52 +49,52 @@ The system is intended to **support—not replace—human judgement** in disaste
 ## 🧠 How It Is Intended to Work
 
 ```text
-        Affected Person
-               |
-               v
-    Emergency Request Submission
-       (SMS / Web / Mobile)
-               |
-               v
-      Request Collection
-               |
-               v
-       Data Storage
-               |
-               v
-   Text Preprocessing & Tokenization
-               |
-               v
-       BERT / RoBERTa
-     (models to evaluate)
-               |
-        +------+------+
-        |             |
-        v             v
- Urgency Prediction   Information Extraction
-        |             |
-        |        +----+-----------------------+
-        |        | Location                   |
-        |        | Disaster type              |
-        |        | Required resources         |
-        |        | Medical requirements       |
-        |        | Number of affected people  |
-        |        +----------------------------+
-        |             |
-        +------+------+
-               |
-               v
-       Priority Assignment
-      High / Medium / Low
-               |
-               v
-       Priority-Based Queue
-               |
-               v
-     Proposed Responder View
-               |
-               v
-      Human Review and Action
+                 Affected Person
+                        |
+                        v
+          Emergency Request Submission
+               (SMS / Web / Mobile)
+                        |
+                        v
+               Request Collection
+                        |
+                        v
+                  Data Storage
+                        |
+                        v
+          Text Preprocessing & Tokenization
+                        |
+                        v
+                 BERT / RoBERTa
+                (models to evaluate)
+                        |
+                 +------+------+
+                 |             |
+                 v             v
+         Urgency Prediction  Information Extraction
+                 |             |
+                 |       +-----+--------------------+
+                 |       | Location                 |
+                 |       | Disaster type            |
+                 |       | Required resources       |
+                 |       | Medical requirements     |
+                 |       | Number of affected people|
+                 |       +--------------------------+
+                 |             |
+                 +------+------+
+                        |
+                        v
+                Priority Assignment
+                  High / Medium / Low
+                        |
+                        v
+               Priority-Based Queue
+                        |
+                        v
+              Proposed Responder View
+                        |
+                        v
+               Human Review and Action
 ```
 
 *This diagram describes the proposed workflow, not a verified running implementation.*
@@ -116,9 +116,9 @@ The system is intended to **support—not replace—human judgement** in disaste
 
 ## 🔎 Example of the Intended Output
 
-**Illustrative example only — not an actual model prediction.**
+*Illustrative example only — not an actual model prediction.*
 
-Incoming message:
+**Incoming message:**
 
 > “Flood water has entered our house. Two people are injured and we need immediate medical help near the bridge.”
 
@@ -170,7 +170,7 @@ The exact libraries, web framework, database, dataset name, and deployment setup
 
 ## 🗂️ Proposed Project Structure
 
-The final repository structure may change during implementation. The following is a **suggested organization**, not a description of existing files.
+The final repository structure may change during implementation. The following is a suggested organization, not a description of existing files.
 
 ```text
 ResQ/
@@ -217,7 +217,7 @@ The roadmap below reflects the intended development sequence. It is not a claim 
 
 ## 👥 Project Team
 
-Developed as a B.Tech Computer Science and Engineering main project at **Vidya Academy of Science & Technology**, Thalakottukara, Thrissur, Kerala, during the **2026–2027** academic year.
+Developed as a **B.Tech Computer Science and Engineering main project** at **Vidya Academy of Science & Technology, Thalakottukara, Thrissur, Kerala**, during the **2026–2027 academic year**.
 
 | Team member | Student ID |
 |---|---|
@@ -226,8 +226,8 @@ Developed as a B.Tech Computer Science and Engineering main project at **Vidya A
 | Anjima PD | VAS23CS053 |
 | Aravind G | VAS23CS060 |
 
-**Project guide:** Dr Sunitha C  
-**Department:** Computer Science and Engineering
+- **Project guide:** Dr Sunitha C
+- **Department:** Computer Science and Engineering
 
 ## 📄 License
 
