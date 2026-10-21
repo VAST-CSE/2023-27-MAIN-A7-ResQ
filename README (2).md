@@ -29,6 +29,26 @@ AI-Powered Emergency Request Prioritization
 
  <div align="center">
 
+# ResQ
+
+### *AI-Assisted Disaster Relief Request Prioritization Using NLP*
+
+<h2>AI-Powered Emergency Request Prioritization</h2>
+
+![Status](https://img.shields.io/badge/Status-Planning%20%2F%20Design-orange)
+![Language](https://img.shields.io/badge/Language-Python-blue)
+![Domain](https://img.shields.io/badge/Domain-NLP%20%7C%20Machine%20Learning-purple)
+![Models](https://img.shields.io/badge/Candidate%20Models-BERT%20%7C%20RoBERTa-teal)
+![License](https://img.shields.io/badge/License-Not%20Selected-lightgrey)
+
+**Turning emergency messages into structured, prioritized information for disaster response teams.**
+
+</div>
+
+---
+
+> **Project status:** ResQ is currently in the planning and design stage. The proposed system has not yet been built, deployed, or tested.
+
 ## What is ResQ?
 
 ResQ is a proposed AI-assisted system that aims to help disaster response teams identify emergency requests that may need urgent attention. It will use Natural Language Processing (NLP) to classify requests by urgency and extract useful details, helping responders review critical cases first.
