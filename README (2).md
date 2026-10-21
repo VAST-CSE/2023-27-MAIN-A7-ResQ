@@ -1,23 +1,33 @@
+<div align="center">
 
 # ResQ
 
 ### *AI-Assisted Disaster Relief Request Prioritization Using NLP*
 
-<h2>AI-Powered Emergency Request Prioritization</h2>
+<br>
 
-![Status](https://img.shields.io/badge/Status-Planning%20%2F%20Design-orange)
-![Language](https://img.shields.io/badge/Language-Python-blue)
-![Domain](https://img.shields.io/badge/Domain-NLP%20%7C%20Machine%20Learning-purple)
-![Models](https://img.shields.io/badge/Candidate%20Models-BERT%20%7C%20RoBERTa-teal)
-![License](https://img.shields.io/badge/License-Not%20Selected-lightgrey)
+<h2 style="color: #00D4FF; font-family: monospace;">
+AI-Powered Emergency Request Prioritization
+</h2>
 
-**Turning emergency messages into structured, prioritized information for disaster response teams.**
+![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-orange)
+![Python](https://img.shields.io/badge/PYTHON-3.x-blue)
+![NLP](https://img.shields.io/badge/TECHNOLOGY-NLP-purple)
+![Models](https://img.shields.io/badge/MODELS-BERT%20%7C%20RoBERTa-teal)
 
 </div>
 
+<br>
+
 ---
 
-> **Project status:** ResQ is currently in the planning and design stage. The proposed system has not yet been built, deployed, or tested.
+<div align="center">
+
+> Turning emergency messages into clear, prioritized information to support disaster response teams.
+
+</div>
+
+ <div align="center">
 
 ## What is ResQ?
 
