@@ -5,10 +5,6 @@
 ### *AI-Assisted Disaster Relief Request Prioritization Using NLP*
 
 
-
-
-<h2>AI-Powered Emergency Request Prioritization</h2>
-
 ![Status](https://img.shields.io/badge/Status-Planning%20%2F%20Design-orange)
 ![Language](https://img.shields.io/badge/Language-Python-blue)
 ![Domain](https://img.shields.io/badge/Domain-NLP%20%7C%20Machine%20Learning-purple)
