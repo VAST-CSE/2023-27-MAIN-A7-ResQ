@@ -4,34 +4,8 @@
 
 ### *AI-Assisted Disaster Relief Request Prioritization Using NLP*
 
-<br>
 
-<h2 style="color: #00D4FF; font-family: monospace;">
-AI-Powered Emergency Request Prioritization
-</h2>
 
-![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-orange)
-![Python](https://img.shields.io/badge/PYTHON-3.x-blue)
-![NLP](https://img.shields.io/badge/TECHNOLOGY-NLP-purple)
-![Models](https://img.shields.io/badge/MODELS-BERT%20%7C%20RoBERTa-teal)
-
-</div>
-
-<br>
-
----
-
-<div align="center">
-
-> Turning emergency messages into clear, prioritized information to support disaster response teams.
-
-</div>
-
- <div align="center">
-
-# ResQ
-
-### *AI-Assisted Disaster Relief Request Prioritization Using NLP*
 
 <h2>AI-Powered Emergency Request Prioritization</h2>
 
