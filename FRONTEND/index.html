@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demonstration disaster relief operations dashboard">
+  <title>Operations Overview | RESQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="js/sample-data.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/dashboard.js"></script>
+</head>
+<body data-page="dashboard">
+  <div id="app-shell"></div>
+  <main class="main-content">
+    <header class="page-header">
+      <div><p class="eyebrow">OPERATIONS CENTER / OVERVIEW</p><h1>Good day, Coordinator</h1><p class="muted">Monitor incoming requests and coordinate relief response.</p></div>
+      <div class="header-actions"><span class="demo-pill"><span></span> DEMO ENVIRONMENT</span><a class="button button-primary" href="#submit-sos">＋ Submit SOS</a></div>
+    </header>
+    <section class="stats-grid" id="dashboard-stats" aria-label="Request summary"></section>
+    <section class="dashboard-grid">
+      <article class="panel chart-panel"><div class="panel-heading"><div><h2>Request priority</h2><p>Current distribution across all reports</p></div><a href="analytics.html">View analytics →</a></div><div class="chart-wrap"><canvas id="priority-chart" aria-label="Request priority chart"></canvas></div></article>
+      <article class="panel chart-panel"><div class="panel-heading"><div><h2>Incoming requests</h2><p>Reports received over the last 7 days</p></div><span class="tiny-label">THIS WEEK</span></div><div class="chart-wrap"><canvas id="trend-chart" aria-label="Incoming requests trend chart"></canvas></div></article>
+    </section>
+    <section class="dashboard-grid lower-grid">
+      <article class="panel"><div class="panel-heading"><div><h2>Recent SOS messages</h2><p>Latest requests requiring attention</p></div><a href="requests.html">All requests →</a></div><div id="recent-requests"></div></article>
+      <article class="panel"><div class="panel-heading"><div><h2>Response snapshot</h2><p>Current operational picture</p></div></div><div id="response-snapshot"></div></article>
+    </section>
+    <section class="panel form-panel" id="submit-sos">
+      <div class="panel-heading"><div><p class="eyebrow">NEW INCOMING REPORT</p><h2>Submit an emergency request</h2><p>Use fictional data only. This browser demonstration is not monitored by emergency services.</p></div><span class="demo-pill"><span></span> LOCAL DEMO</span></div>
+      <form id="sos-form" novalidate>
+        <div class="form-grid">
+          <label class="field field-wide">Emergency message <span class="required">*</span><textarea name="message" rows="3" minlength="12" maxlength="600" placeholder="Describe what happened and the urgent needs..." required></textarea><small>At least 12 characters. The demonstration classifier reviews this text.</small></label>
+          <label class="field">Disaster type <span class="required">*</span><select name="disasterType" required><option value="">Select a category</option><option>Flood</option><option>Earthquake</option><option>Cyclone</option><option>Fire</option><option>Landslide</option><option>Medical emergency</option><option>Other</option></select></label>
+          <label class="field">Location <span class="required">*</span><input name="location" minlength="2" maxlength="100" placeholder="e.g. Riverside Ward, North District" required></label>
+          <label class="field">Assistance required <span class="required">*</span><input name="assistance" placeholder="e.g. rescue, drinking water, medical aid" required></label>
+          <label class="field">People affected <span class="required">*</span><input name="peopleAffected" type="number" min="1" max="10000" value="1" required></label>
+          <label class="field field-wide">Optional image<input name="image" type="file" accept="image/*"><small>Image is used only for this page preview and is not uploaded or stored.</small></label>
+        </div>
+        <div id="classification-preview" class="classification-preview" hidden aria-live="polite"></div>
+        <div class="form-footer"><p class="muted">All submitted data stays in this browser's local storage.</p><button class="button button-primary" type="submit">Analyze &amp; submit request</button></div>
+      </form>
+    </section>
+    <footer class="page-footer">RESQ is an academic demonstration. Do not submit real emergency or personal information.</footer>
+  </main>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+</body>
+</html>
